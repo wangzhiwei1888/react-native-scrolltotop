@@ -58,7 +58,15 @@ export default class ScrollToTop extends Component {
         /*
          * android，ios都使用原生下拉刷新组件：
          */
-        this.props.root.refs.listview.scrollTo({x:0, y:0, animated:true});
+        // this.props.root.refs.listview.scrollTo({x:0, y:0, animated:true});
+        var arr = this.props.refData;
+        for(var i=0;i<arr.length;i++){
+
+            if(this.props.root.refs[arr[i]])
+            {
+                this.props.root.refs[arr[i]].scrollTo({x:0, y:0, animated:true});    
+            }    
+        }
     }
 }
 

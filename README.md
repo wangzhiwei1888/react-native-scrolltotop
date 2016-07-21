@@ -21,6 +21,7 @@ import ScrollTopView from 'react-native-scrolltotop';
     //...
     this.state = {
       isShowToTop: false,
+      refData:['listview'],
     };
   }
   
@@ -55,7 +56,7 @@ import ScrollTopView from 'react-native-scrolltotop';
       <Text style={styles.headerText}>消息列表</Text>
     </View>
     {listView}
-    {this.state.isShowToTop?<ScrollTopView root={this} ></ScrollTopView>:null}
+    {this.state.isShowToTop?<ScrollTopView refData={this.state.refData} root={this} ></ScrollTopView>:null}
   </View>
 ```
 

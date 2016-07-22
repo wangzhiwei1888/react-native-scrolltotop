@@ -1,12 +1,23 @@
 {
   "name": "react-native-scrolltotop-perfect",
   "version": "0.0.2",
-  "description": "a RN component make list come back to top. (一个使列表回到顶部的RN组件)",
+  "description": "a RN component make list come back to top. (一个使列表回到顶部的RN组件 可以用在 react-native-scrollable-tab-view 组件中处理多 listview 的问题。)",
   "main": "index.js",
   "directories": {
     "example": "example"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wangzhiwei1888/react-native-scrolltotop.git"
+  },
+  "author": "yzsolo125@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wangzhiwei1888/react-native-scrolltotop/issues"
+  },
+  "homepage": "https://github.com/wangzhiwei1888/react-native-scrolltotop#readme"
+
 }
